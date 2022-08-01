@@ -118,7 +118,6 @@
 
 .staff__cards {
   max-width: 760px;
-
   flex-wrap: wrap;
   display: flex;
   margin: auto;
@@ -209,6 +208,8 @@
   background-repeat: no-repeat;
   background-position: center;
   margin-right: 12px;
+  width: 24px;
+  height: 24px;
 }
 
 .event-info__icon_type_calendar {
@@ -288,15 +289,15 @@
   max-width: 100%;
 }
 
-.person__image_size-l {
+.person__image_size_l {
   width: 140px;
 }
 
-.person__image_size-m {
+.person__image_size_m {
   width: 100px;
 }
 
-.person__image_size-s {
+.person__image_size_s {
   width: 80px;
 }
 
@@ -361,7 +362,6 @@
   overflow: hidden;
   position: relative;
   box-sizing: border-box;
-  justify-content: center;
   display: flex;
 }
 
@@ -382,7 +382,7 @@
   position: relative;
   justify-content: center;
   z-index: 2;
-  margin-left: 50px;
+  margin-left: 120px;
 }
 
 .about__paragraph {
@@ -392,7 +392,7 @@
   z-index: 2;
 }
 .about__paragraph:last-of-type {
-  padding-bottom: auto;
+  padding-bottom: 0;
 }
 
 .about__circle {
@@ -423,11 +423,11 @@
 .footer__column {
 }
 
-.footer__column_hours {
+.footer__column_content_hours {
   margin-left: auto;
 }
 
-.footer__column_social {
+.footer__column_content_social {
   margin-left: 100px;
 }
 
@@ -440,7 +440,7 @@
   padding: 0;
   margin: 0;
 }
-.footer__heading {
+.footer__column-heading {
   margin-bottom: 20px;
   margin-left: auto;
 }
@@ -476,7 +476,9 @@
 }
 
 .footer__copyright {
-  left: 80px;
-  bottom: 60px;
-  position: relative;
+  display: flex;
+  align-self: flex-end;
+  justify-content: flex-start;
+  margin-top: 0;
+  margin-bottom: 0;
 }
